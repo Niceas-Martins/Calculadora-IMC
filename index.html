@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            margin-top: 50px;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            align-items: center;
+            width: 500px;
+            height: auto;
+            color: white;
+            background-color: rgb(78, 127, 220);
+            box-shadow: 5px 5px black;
+        }
+
+        h1 {
+            padding-top: 40px;
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        input[type="text"],
+        input[type = "number"] {
+            border-radius: 20px;
+            display: flex;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            justify-content: center;
+            margin-top: 10px;
+            height: 50px;
+            width: 220px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            border: none;
+            width: 250px;
+            height: 40px;
+            border-radius: 20px;
+        }
+       
+        #Calculo{
+           margin-bottom: 10px;
+        }
+        .Calcular {
+            margin: auto;
+            font-size: 20px;
+        }
+
+        .Resultado {
+            display: none;
+            text-align: center;
+            font-size: 30px;
+            margin-top: 20px;
+            padding-top: 50px;
+            margin-bottom: 10px;
+            color: black;
+            width: 450px;
+            height: 200px;
+            background-color: white;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <head>
+            <h1>Calculadora-IMC</h1>
+        </head>
+        <div id="Nome">
+            <p>Nome : <input type="text" name="Nome" id="Preencher_Nome"></p>
+        </div>
+        <div id="Altura">
+            <p>Altura : <input type="number" name="Altura" id="Preencher_Altura"></p>
+        </div>
+        <div id="Peso">
+            <p>Peso : <input type="number" name="Peso" id="Preencher_Peso"></p>
+        </div>
+        <button id="Calculo">
+            <p class="Calcular">Calcular</p>
+        </button>
+        <div class="Resultado" id="Resultado"></div>
+    </main>
+</body>
+<script src="Script.js"></script>
+
+</html>
